@@ -11,40 +11,66 @@ namespace FiveFighters
     {
         static void Main(string[] args)
         {
+            Druid druid = new Druid();
+                        
+            druid.ShowCharacters();
+
+            Console.WriteLine();
+
+            druid.SpecialAttack();            
+            druid.ShowCharacters();
         }
     }
 
     abstract class Fighter
     {
-        protected string _name;
-        protected int _damage;
-        protected int _health;
-        protected int _armor;
+        protected string Name;
+        protected int Damage;
+        protected int Health;
+        protected int Armor;
 
         public Fighter(string name, int damage, int health, int armor)
         {
-            _name = name;
-            _damage = damage;
-            _health = health;
-            _armor = armor;
+            Name = name;
+            Damage = damage;
+            Health = health;
+            Armor = armor;
         }
 
-        public void ShowCharacters ()
+        public void ShowCharacters()
         {
-            Console.WriteLine($"Боец {_name}|" +
-                $"Жизни: {_health}" +
-                $"Броня: {_armor}" +
-                $"Урон: {_damage}.");
+            Console.WriteLine($"Боец {Name}|" +
+                $"Жизни: {Health} " +
+                $"Броня: {Armor} " +
+                $"Урон: {Damage}.");
         }
 
-        public void TakeDamage(int damage)
+        public virtual void TakeDamage(int damage)
         {
-            _health -= damage - _armor;
+            Health -= damage - Armor;
         }
 
         public virtual void SpecialAttack()
         {
             //"Ульта"
+        }
+    }
+
+    class Druid : Fighter
+    {
+        public Druid(string name = "Друид", int damage = 10, int health = 75, int armor = 3) : base(name, damage, health, armor)
+        {
+        }
+
+        //private bool TargetSpecialAttack()
+        //{
+        //    if (Health <=)
+        //}
+
+        public override void SpecialAttack()
+        {
+            Armor += Armor;
+            Damage += 10;
         }
     }
 }

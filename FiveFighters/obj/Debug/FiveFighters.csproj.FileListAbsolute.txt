@@ -1,0 +1,8 @@
+D:\GIT\OOP.Fighters.VirtualMethod\FiveFighters\bin\Debug\FiveFighters.exe.config
+D:\GIT\OOP.Fighters.VirtualMethod\FiveFighters\bin\Debug\FiveFighters.exe
+D:\GIT\OOP.Fighters.VirtualMethod\FiveFighters\bin\Debug\FiveFighters.pdb
+D:\GIT\OOP.Fighters.VirtualMethod\FiveFighters\obj\Debug\FiveFighters.csproj.AssemblyReference.cache
+D:\GIT\OOP.Fighters.VirtualMethod\FiveFighters\obj\Debug\FiveFighters.csproj.SuggestedBindingRedirects.cache
+D:\GIT\OOP.Fighters.VirtualMethod\FiveFighters\obj\Debug\FiveFighters.csproj.CoreCompileInputs.cache
+D:\GIT\OOP.Fighters.VirtualMethod\FiveFighters\obj\Debug\FiveFighters.exe
+D:\GIT\OOP.Fighters.VirtualMethod\FiveFighters\obj\Debug\FiveFighters.pdb
