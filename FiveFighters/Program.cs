@@ -12,12 +12,12 @@ namespace FiveFighters
         static void Main(string[] args)
         {
             Druid druid = new Druid();
-                        
+
             druid.ShowCharacters();
 
             Console.WriteLine();
 
-            druid.SpecialAttack();            
+            druid.SpecialAttack();
             druid.ShowCharacters();
         }
     }
@@ -62,15 +62,36 @@ namespace FiveFighters
         {
         }
 
-        //private bool TargetSpecialAttack()
-        //{
-        //    if (Health <=)
-        //}
+        private bool TargetSpecialAttack()
+        {
+            int dividerHealth = 2;
+
+            if (Health <= Health / dividerHealth)
+            {
+                return true;
+            }
+
+            return false;
+        }
 
         public override void SpecialAttack()
         {
-            Armor += Armor;
-            Damage += 10;
+            int _upDamage = 10;
+
+            if (TargetSpecialAttack() == true)
+            {
+                Armor += Armor;
+                Damage += _upDamage;
+            }
         }
     }
+
+    class Warrior : Fighter
+    {
+        public Warrior(string name = "Воин", int damage = 8, int health = 110, int armor = 5) : base(name, damage, health, armor)
+        {
+        }
+    }
+
+
 }
