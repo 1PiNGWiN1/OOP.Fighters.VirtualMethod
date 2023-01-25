@@ -91,7 +91,46 @@ namespace FiveFighters
         public Warrior(string name = "Воин", int damage = 8, int health = 110, int armor = 5) : base(name, damage, health, armor)
         {
         }
+
+        public override void SpecialAttack()
+        {
+            base.SpecialAttack();
+        }
     }
 
+    class Wizard : Fighter
+    {
+        public Wizard(string name = "Маг", int damage = 4, int health = 55, int armor = 0) : base(name, damage, health, armor)
+        {
+        }
 
+        public override void SpecialAttack()
+        {
+            base.SpecialAttack();
+        }
+    }
+
+    class Assasin : Fighter
+    {
+        public Assasin(string name = "Ассасин", int damage = 15, int health = 60, int armor = 2) : base(name, damage, health, armor)
+        {
+        }
+
+        public override void SpecialAttack()
+        {
+            base.SpecialAttack();
+        }
+    }
+
+    class Vampire:Fighter
+    {
+        public Vampire(string name = "Вампир", int damage = 7, int health = 80, int armor = 0) : base(name, damage, health, armor)
+        {
+        }
+
+        public override void SpecialAttack()
+        {
+            base.SpecialAttack();
+        }
+    }
 }
